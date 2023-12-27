@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+     /* font-family: 'Times New Roman', Times, serif; */
+}
+
+body{
+    background-color: rgba(69, 178, 241, 0.829);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* text-align: center; */
+    min-height: 300vh;
+    overflow: hidden;
+}
+
+#clock-container{
+    /* width: 300px; */
+    /* height: 300px;/ */
+    background-color: rgb(225, 225, 225,0.8);
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    
+    /* position: relative; */
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+width: 350px;
+    height: 350px;
+    /* background: url(https://tse4.mm.bing.net/th?id=OIP.rtP-vW_wT_RNiGEA-U7BNwHaHa&pid=Api&P=0&w=300&h=300) no-repeat; */
+    margin: auto;
+    margin-top: 10%;
+    /* border: 2px solid red; */
+    background-size:100%;
+}
+
+.number{
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: auto;
+    /* margin: 5px; */
+    padding: 10px;
+}
+.number1{  --rotation: 30deg;}
+.number2{  --rotation: 60deg;}
+.number3{  --rotation: 90deg;}
+.number4{  --rotation: 120deg;}
+.number5{  --rotation: 150deg;}
+.number6{  --rotation: 180deg;}
+.number7{  --rotation: 210deg;}
+.number8{  --rotation: 240deg;}
+.number9{  --rotation: 270deg;}
+.number10{  --rotation: 300deg;}
+.number11{  --rotation: 330deg;}
+
+
+#hour, #minute, #second, #center{
+    position: absolute;
+    background: black;
+    border-radius: 10px; 
+    transform-origin: bottom;
+    bottom: 50%;
+    left: 50%;
+    z-index: 10;
+  transform: translateX(-50%) 
+}
+
+
+
+
+#hour{
+    width: 7px;
+    height: 25%;
+    top: 27%;
+    left: 48.89%;
+    opacity: 0.8;  
+    /* display: none; */
+}
+#minute{
+    /* width: 1.6%;
+    height: 30%;
+    top: 22%;
+    left: 49.9%;
+    opacity: 0.8;   */
+    width: 3px;
+    height: 34%;
+    top: 18%;
+    left: 48.94%;
+    opacity: 0.8;
+    /* display: none; */
+}
+#second{
+    width: 1.3px;
+    height: 40%;
+    top: 12%;
+    left: 48.94%;
+    opacity: 0.8; 
+    /* display: none; */
+    background-color: red;
+}
+#center{
+    position: absolute;
+    height: 3%;
+    width: 3%;
+    left: 49.0%;
+    top: 50.5%;
+    border-radius:50%;
+    background-color: black;
+}
+.display-4{
+    text-align: center;
+    margin-top: 2%;
+    border: 2px solid black;
+    width: fit-content;
+    padding: 10px;
+    background-color: rgb(231, 225, 225);
+    border-radius: 10px;
+/* height: 20px; */
+/* width: 500px; */
+}
+.container{
+    /* max-height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
